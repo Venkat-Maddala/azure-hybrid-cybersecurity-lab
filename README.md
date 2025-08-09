@@ -83,63 +83,62 @@ Virtual Machine (DC01)
 ## 7. Screenshots
 ## 7. Screenshots
 
-1. **Create Resource Group - East US**  
+1. **Search - Resource Group**  
+    ![Search Resource Group](images/Search%20for%20Resource%20Group%20and%20create.png)
+   
+2. **Create Resource Group - East US**  
    ![Create Resource Group - East US](images/01-create-resource-group-eastus.png)
 
-2. **Create Virtual Network - West US 2**  
+3. **Search - Virtual Network**  
+    ![Search Virtual Network](images/search%20for%20Virtual%20network%20and%20create.png)
+    
+4. **Create Virtual Network - West US 2**  
    ![Create Virtual Network - West US 2](images/02-create-virtual-network-westus2.png)
 
-3. **Add Inbound Rules to NSG**  
-   ![NSG Inbound Rules](images/03-a-nsg-adding-inbound-rules.png)
-
-4. **Create Network Security Group - West US 2**  
+5. **Search - Network Security Group**  
+    ![Search NSG](images/search%20for%20Network%20Security%20Group%20and%20create.png)
+    
+6. **Create Network Security Group - West US 2**  
    ![Create NSG - West US 2](images/03-create-network-security-group-westus2.png)
 
-5. **VM Basics Tab (Part 1)**  
+7.**Add Inbound Rules to NSG**  
+   ![NSG Inbound Rules](images/03-a-nsg-adding-inbound-rules.png)
+   
+8.**Search - Virtual Machine**  
+    ![Search Virtual Machine](images/search%20for%20Virtual%20Machine%20and%20create.png)
+    
+9.  **VM Basics Tab (Part 1)**  
    ![VM Basics Tab](images/04-vm-basics-tab.png)
 
-6. **VM Basics Tab (Part 2)**  
+10. **VM Basics Tab (Part 2)**  
    ![VM Basics Tab 2](images/04-vm-basics-tab(2).png)
 
-7. **VM Networking Tab**  
+11. **VM Networking Tab**  
    ![VM Networking Tab](images/05-vm-networkingtab.png)
 
-8. **VM Management Tab**  
+12. **VM Management Tab**  
    ![VM Management Tab](images/06-vm-management-tab.png)
 
-9. **VM Monitoring Tab**  
+13. **VM Monitoring Tab**  
    ![VM Monitoring Tab](images/07-vm-monitoring-tab.png)
 
-10. **VM Advanced Tab**  
+14. **VM Advanced Tab**  
     ![VM Advanced Tab](images/08-vm-advanced-tab.png)
 
-11. **Resource Group - Move Options**  
+15. **Resource Group - Move Options**  
     ![Resource Group Move Options](images/10-resource-group-move-options.png)
 
-12. **Moving Resources to New Resource Group**  
+16. **Moving Resources to New Resource Group**  
     ![Moving Resources](images/12-moving-resources-to-new-rg.png)
 
-13. **Delete Old Resource Group - East US**  
+17. **Delete Old Resource Group - East US**  
     ![Delete Old Resource Group](images/13-delete-old-resource-group-eastus.png)
 
-14. **GitHub Repo Creation**  
+18. **GitHub Repo Creation**  
     ![GitHub Repo Creation](images/14-github-repo-create.png)
 
-15. **GitHub Images Folder**  
+19. **GitHub Images Folder**  
     ![GitHub Folder Images](images/15-github-folder-images.png)
-
-16. **Search - Resource Group**  
-    ![Search Resource Group](images/Search%20for%20Resource%20Group%20and%20create.png)
-
-17. **Search - Network Security Group**  
-    ![Search NSG](images/search%20for%20Network%20Security%20Group%20and%20create.png)
-
-18. **Search - Virtual Machine**  
-    ![Search Virtual Machine](images/search%20for%20Virtual%20Machine%20and%20create.png)
-
-19. **Search - Virtual Network**  
-    ![Search Virtual Network](images/search%20for%20Virtual%20network%20and%20create.png)
-
 
 ---
 
