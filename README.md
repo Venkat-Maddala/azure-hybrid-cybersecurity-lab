@@ -32,3 +32,65 @@ The lab will serve as a platform to practice:
 *(Diagram Placeholder — to be added later)*
 
 Example layout:
+
+Internet
+|
+Public IP (DC01-ip)
+|
+NSG (nsg-dc)
+|
+Subnet (subnet-dc) — 10.0.1.0/24
+|
+Virtual Machine (DC01)
+
+
+---
+
+## 4. Step-by-Step Progress (08-Aug-2025)
+
+1. Created **Resource Group** `rg-csc-lab` in East US *(later recreated in West US 2 for regional consistency)*.
+2. Created **Virtual Network** `vnet-csc` with address space `10.0.0.0/16`.
+3. Added **Subnet** `subnet-dc` with `10.0.1.0/24` CIDR.
+4. Configured **Network Security Group** `nsg-dc`:
+   - Allowed inbound RDP (TCP 3389) from my IP.
+5. Created **Public IP** `DC01-ip` (Static).
+6. Created **NIC** `dc01635` linked to `subnet-dc` & `nsg-dc`.
+7. Deployed **Windows Server VM** `DC01` in West US 2:
+   - Size optimized for Azure Education credits.
+   - Monitoring features disabled to reduce cost.
+8. Deleted unused **East US** resources after migration.
+
+---
+
+## 5. Configuration Notes
+- **Security Type**: Standard
+- **Public IP**: Static for consistent RDP connection
+- **Monitoring**: All optional monitoring disabled to preserve credits
+- **Cost Optimization**: Selected lowest viable VM size for DC role
+
+---
+
+## 6. Next Steps
+- Promote `DC01` to Domain Controller and configure Active Directory.
+- Add a client VM to join the domain.
+- Set up Azure Sentinel for SIEM.
+- Integrate Splunk for log management.
+- Deploy SailPoint for Identity Governance testing.
+- Implement vulnerability scanning tools (OpenVAS, Nessus, etc.).
+
+---
+
+## 7. Screenshots
+*(Replace placeholders with actual image paths in your repo)*
+
+![Resource Group West US 2](images/rg-westus2.png)
+![VM Networking Tab](images/vm-networking.png)
+![NSG Configuration](images/nsg-dc.png)
+![VM Deployment Summary](images/vm-summary.png)
+
+---
+
+## 8. Credits
+Built by **Venkat Maddala** as part of a personal cybersecurity skills development lab.  
+This project is continuously evolving to replicate **real-world enterprise hybrid cloud environments**.
+
