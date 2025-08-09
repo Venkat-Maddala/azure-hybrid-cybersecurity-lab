@@ -81,12 +81,7 @@ Virtual Machine (DC01)
 ---
 
 ## 7. Screenshots
-*(Replace placeholders with actual image paths in your repo)*
-
-![Resource Group West US 2](images/rg-westus2.png)
-![VM Networking Tab](images/vm-networking.png)
-![NSG Configuration](images/nsg-dc.png)
-![VM Deployment Summary](images/vm-summary.png)
+will be placed later during more documentation
 
 ---
 
