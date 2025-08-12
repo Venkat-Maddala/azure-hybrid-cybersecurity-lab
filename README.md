@@ -60,7 +60,7 @@ Virtual Machine (DC01)
    - Monitoring features disabled to reduce cost.
 8. Deleted unused **East US** resources after migration.
 
-### **Update – 11 Aug 2025**
+### **Update – 10 Aug 2025**
 
 1. Created **Organizational Units (OUs)** for better AD structure:
   - `_Servers`
