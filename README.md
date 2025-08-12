@@ -60,6 +60,19 @@ Virtual Machine (DC01)
    - Monitoring features disabled to reduce cost.
 8. Deleted unused **East US** resources after migration.
 
+### **Update – 11 Aug 2025**
+
+1. Created **Organizational Units (OUs)** for better AD structure:
+  - `_Servers`
+  - `_Workstations`
+  - `_Users`
+    - `Admins`
+    - `StandardUsers`
+2. Moved **CLIENT01** into `_Workstations` OU.
+3. Created test domain user **Harry Potter** in `StandardUsers`.
+4. Attempted **GPO deployment** for desktop wallpaper *(requires shared UNC path for completion)*.
+5. Noted RDP restriction for new users — pending group membership fix.
+
 ---
 
 ## 5. Configuration Notes
