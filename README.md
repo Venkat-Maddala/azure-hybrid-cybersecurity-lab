@@ -93,7 +93,7 @@ Virtual Machine (DC01)
 
 ---
 ## 7. 📂 Case Studies
-- [GPO Desktop Wallpaper Deployment – Case Study](case-studies/gpo-wallpaper-case-study/README.md)
+- [GPO Desktop Wallpaper Deployment – Case Study]()
 ---
 
 ## 8. Screenshots
