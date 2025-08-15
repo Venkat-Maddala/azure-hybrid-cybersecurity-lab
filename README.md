@@ -92,8 +92,11 @@ Virtual Machine (DC01)
 - Implement vulnerability scanning tools (OpenVAS, Nessus, etc.).
 
 ---
+## 7. 📂 Case Studies
+- [GPO Desktop Wallpaper Deployment – Case Study](case-studies/gpo-wallpaper-case-study/README.md)
+---
 
-## 7. Screenshots
+## 8. Screenshots
 
 1. **Search - Resource Group**  
     ![Search Resource Group](images/Search%20for%20Resource%20Group%20and%20create.png)
