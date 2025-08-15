@@ -94,7 +94,6 @@ Virtual Machine (DC01)
 ---
 
 ## 7. Screenshots
-## 7. Screenshots
 
 1. **Search - Resource Group**  
     ![Search Resource Group](images/Search%20for%20Resource%20Group%20and%20create.png)
