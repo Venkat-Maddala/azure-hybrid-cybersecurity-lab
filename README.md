@@ -29,7 +29,27 @@ The lab will serve as a platform to practice:
 ---
 
 ## 3. Network Diagram
-*(Diagram Placeholder — to be added later)*
+## 3. Network Diagram
+
+Below is the current build (as deployed) — RDP from Internet → Public IP → NSG → DC01 inside `subnet-dc`.
+
+```mermaid
+flowchart LR
+  Internet[(Internet)]
+
+  PIP[Public IP<br/>DC01-ip]
+  NSG[nsg-dc<br/>Network Security Group]
+
+  subgraph Azure["Azure — West US 2"]
+    subgraph VNET["vnet-csc  (10.0.0.0/16)"]
+      subgraph SUBNET_DC["subnet-dc  (10.0.1.0/24)"]
+        DC01[DC01<br/>Windows Server 2022<br/>Planned Domain Controller]
+      end
+    end
+  end
+
+  Internet --> PIP --> NSG --> DC01
+
 
 Example layout:
 
