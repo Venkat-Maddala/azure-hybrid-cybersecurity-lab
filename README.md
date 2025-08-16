@@ -30,28 +30,30 @@ The lab will serve as a platform to practice:
 
 ## 3. Network Diagram
 
+## 3. Network Diagram
+
 ```mermaid
 flowchart TB
-  Internet[(Internet)] --> PIP[Public IP: DC01-ip]
-  PIP --> NSG[nsg-dc\n(Network Security Group)]
+  Internet[(Internet)] --> PIP["Public IP: DC01-ip"]
+  PIP --> NSG["NSG: nsg-dc"]
 
   subgraph Azure["Azure — West US 2"]
-    subgraph VNET["vnet-csc\n(10.0.0.0/16)"]
-      subgraph SUBNET_DC["subnet-dc\n(10.0.1.0/24)"]
-        DC01[DC01 · Win Server 2022]
+    subgraph VNET["vnet-csc 10.0.0.0/16"]
+      subgraph SUBNET_DC["subnet-dc 10.0.1.0/24"]
+        DC01["DC01 - Windows Server 2022"]
       end
-      subgraph SUBNET_CLIENTS["subnet-clients\n(10.0.2.0/24)"]
-        CLIENT01[CLIENT01 · Windows 10]
+      subgraph SUBNET_CLIENTS["subnet-clients 10.0.2.0/24"]
+        CLIENT01["CLIENT01 - Windows 10"]
       end
-      subgraph SUBNET_SEC["subnet-security\n(10.0.3.0/24)"]
-        SIEM[siem01 · Splunk / Azure Sentinel]
+      subgraph SUBNET_SEC["subnet-security 10.0.3.0/24"]
+        SIEM["siem01 - Splunk / Azure Sentinel"]
       end
     end
   end
 
   NSG --> DC01
-  DC01 -- DNS/Kerberos --> CLIENT01
-  CLIENT01 -- Syslog/Agent --> SIEM
+  DC01 -- "DNS/Kerberos" --> CLIENT01
+  CLIENT01 -- "Syslog/Agent" --> SIEM
 
 ```
 
