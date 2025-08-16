@@ -29,26 +29,32 @@ The lab will serve as a platform to practice:
 ---
 
 ## 3. Network Diagram
-## 3. Network Diagram
-
-Below is the current build (as deployed) — RDP from Internet → Public IP → NSG → DC01 inside `subnet-dc`.
 
 ```mermaid
 flowchart LR
   Internet[(Internet)]
-
-  PIP[Public IP<br/>DC01-ip]
-  NSG[nsg-dc<br/>Network Security Group]
+  PIP[Public IP: DC01-ip]
+  NSG[NSG: nsg-dc]
 
   subgraph Azure["Azure — West US 2"]
-    subgraph VNET["vnet-csc  (10.0.0.0/16)"]
-      subgraph SUBNET_DC["subnet-dc  (10.0.1.0/24)"]
-        DC01[DC01<br/>Windows Server 2022<br/>Planned Domain Controller]
+    subgraph VNET["vnet-csc (10.0.0.0/16)"]
+      subgraph SUBNET_DC["subnet-dc (10.0.1.0/24)"]
+        DC01[DC01 · Win Server 2022]
+      end
+      subgraph SUBNET_CLIENTS["subnet-clients (10.0.2.0/24)"]
+        CLIENT01[CLIENT01 · Windows 10]
+      end
+      subgraph SUBNET_SECUR["subnet-security (10.0.3.0/24)"]
+        SIEM[siem01 · Splunk/Azure Sentinel]
       end
     end
   end
 
   Internet --> PIP --> NSG --> DC01
+  NSG -. allowed RDP .-> DC01
+  DC01 <-- DNS/Kerberos --> CLIENT01
+  CLIENT01 -- Syslog/Agent --> SIEM
+```
 
 
 Example layout:
