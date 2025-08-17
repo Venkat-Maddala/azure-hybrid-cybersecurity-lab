@@ -140,14 +140,15 @@ flowchart TD
     B --> C[Verify UNC Path Accessible]
     C --> D[Check File Format (BMP/JPG)]
     D --> E[Check Permissions (Share & NTFS)]
-    E --> F[Verify Loopback Processing]
-    F --> G[Check SYSVOL Replication (Path Exists)]
+    E --> F[Verify Loopback Processing (Merge)]
+    F --> G[Check SYSVOL Path Exists]
     G --> H[Check Event Logs (Userenv/GP)]
-    H --> I[Registry Verification (HKCU Policies)]
+    H --> I[Registry Verification (HKCU\\...\\Policies\\System)]
     I --> J{RDP Supports Background?}
-    J -- No --> K[Enable Desktop Wallpaper in RDP Experience Tab]
+    J -- No --> K[Enable Desktop Background in RDP (Experience Tab)]
     J -- Yes --> L[Resolution: Wallpaper Applied]
     K --> L
+
 ```
 
 ## Screenshots
