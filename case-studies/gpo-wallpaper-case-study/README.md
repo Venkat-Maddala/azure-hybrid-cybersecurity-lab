@@ -148,7 +148,6 @@ flowchart TD
     J -- No --> K[Enable Desktop Background in RDP (Experience Tab)]
     J -- Yes --> L[Resolution: Wallpaper Applied]
     K --> L
-
 ```
 
 ## Screenshots
