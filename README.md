@@ -113,6 +113,18 @@ Virtual Machine (DC01)
 - **Ops hygiene:** Set **DC01 time zone** to **Central Standard Time**; confirmed **Auto-shutdown 11:59 PM Central** for DC01 and CLIENT01.
 - **Progress Tracker:** Locked phases 1–5 as complete; **Phase 6** marked as *in progress* (screenshots upload pending).
 
+### **Update – 16 Aug 2025**
+
+- **Microsoft Sentinel (Phase 7 kickoff):**
+  - Verified/created **Log Analytics Workspace** `law-csc` (West US 2), retention set for lab use.
+  - **Enabled Microsoft Sentinel** on `law-csc` (free trial activated).
+  - **Windows Security Events via AMA:** Created **DCR `DCR-WindowsSecurity`**, scoped to **DC01** and **CLIENT01**; **Azure Monitor Agent** deployed and showing **Succeeded** on both VMs.
+  - **Data flow verified:** `SecurityEvent` table receiving data.
+  - **Hunting:** Ran KQL to isolate **failed logons (4625)** from **CLIENT01** and confirmed results.
+- **Next actions (planned):**
+  - Enable **Entra ID** diagnostics (**SignInLogs**, **AuditLogs**) to `law-csc`.
+  - Create a **scheduled analytics rule** for multiple failed logons in 10 minutes (brute-force signal).
+  - Save a **Windows Security** workbook and capture screenshots for the case study.
 
 ---
 
