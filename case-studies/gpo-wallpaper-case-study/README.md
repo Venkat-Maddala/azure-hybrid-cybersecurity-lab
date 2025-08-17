@@ -128,6 +128,27 @@ Confirm the **Desktop Wallpaper** user policy is listed under **Applied GPOs** a
   README.md
   /screenshots
 ```
+---
+
+## MindMap - Troubleshooting
+
+## GPO Wallpaper Troubleshooting Mind Map
+
+```mermaid
+flowchart TD
+    A[Start: Wallpaper GPO Issue] --> B[Check GPO Applied (gpresult)]
+    B --> C[Verify UNC Path Accessible]
+    C --> D[Check File Format (BMP/JPG)]
+    D --> E[Check Permissions (Share & NTFS)]
+    E --> F[Verify Loopback Processing]
+    F --> G[Check SYSVOL Replication (Path Exists)]
+    G --> H[Check Event Logs (Userenv/GP)]
+    H --> I[Registry Verification (HKCU Policies)]
+    I --> J{RDP Supports Background?}
+    J -- No --> K[Enable Desktop Wallpaper in RDP Experience Tab]
+    J -- Yes --> L[Resolution: Wallpaper Applied]
+    K --> L
+```
 
 ## Screenshots
 
