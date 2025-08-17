@@ -73,7 +73,7 @@ Virtual Machine (DC01)
 
 ## 4. Step-by-Step Progress 
 
-  (08-Aug-2025)
+  ### **Update – 08 Aug 2025**
   
   1. Created **Resource Group** `rg-csc-lab` in East US *(later recreated in West US 2 for regional consistency)*.
   2. Created **Virtual Network** `vnet-csc` with address space `10.0.0.0/16`.
