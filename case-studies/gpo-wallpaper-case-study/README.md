@@ -131,21 +131,22 @@ Confirm the **Desktop Wallpaper** user policy is listed under **Applied GPOs** a
 
 ## Screenshots
 
-**GPMC console**
-![GPMC](./screenshots/GPMC.png)
+**GPMC console**  
+![GPMC](./Screenshots/GPMC.png)
 
-**GPMC Editor**
-![GPMC Editor](./screenshots/GPMCeditor.png)
+**GPMC Editor**  
+![GPMC Editor](./Screenshots/GPMCeditor.png)
 
-**Event Viewer (DC01)**
-![Event Viewer – DC01](./screenshots/eventviewer-DC01.png)
+**Applied GPOs report**  
+![GPO Report – Applied GPOs](./Screenshots/GPO-Report-AppliedGPOs.png)
 
-**Applied GPOs report**
-![GPO Report – Applied GPOs](./screenshots/GPO-Report-AppliedGPOs.png)
+**RDP Experience tab – Desktop background enabled**  
+![RDP Experience Tab](./Screenshots/RDP-exp-tab.png)
 
-**RDP Experience tab – Desktop background enabled**
-![RDP Experience Tab](./screenshots/RDP-exp-tab.png)
+**RDP session display settings**  
+![VM via RDP – Display Settings](./Screenshots/VMviaRDP-Display-Settings.png)
 
-**RDP session display settings**
-![VM via RDP – Display Settings](./screenshots/VMviaRDP-Display-Settings.png)
+**Event Viewer (DC01)**  
+![Event Viewer – DC01](./Screenshots/eventviewer-DC01.png)
+
 
