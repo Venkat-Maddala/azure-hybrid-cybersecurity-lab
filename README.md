@@ -71,32 +71,48 @@ Virtual Machine (DC01)
 
 ---
 
-## 4. Step-by-Step Progress (08-Aug-2025)
+## 4. Step-by-Step Progress 
 
-1. Created **Resource Group** `rg-csc-lab` in East US *(later recreated in West US 2 for regional consistency)*.
-2. Created **Virtual Network** `vnet-csc` with address space `10.0.0.0/16`.
-3. Added **Subnet** `subnet-dc` with `10.0.1.0/24` CIDR.
-4. Configured **Network Security Group** `nsg-dc`:
-   - Allowed inbound RDP (TCP 3389) from my IP.
-5. Created **Public IP** `DC01-ip` (Static).
-6. Created **NIC** `dc01635` linked to `subnet-dc` & `nsg-dc`.
-7. Deployed **Windows Server VM** `DC01` in West US 2:
-   - Size optimized for Azure Education credits.
-   - Monitoring features disabled to reduce cost.
-8. Deleted unused **East US** resources after migration.
+  (08-Aug-2025)
+  
+  1. Created **Resource Group** `rg-csc-lab` in East US *(later recreated in West US 2 for regional consistency)*.
+  2. Created **Virtual Network** `vnet-csc` with address space `10.0.0.0/16`.
+  3. Added **Subnet** `subnet-dc` with `10.0.1.0/24` CIDR.
+  4. Configured **Network Security Group** `nsg-dc`:
+     - Allowed inbound RDP (TCP 3389) from my IP.
+  5. Created **Public IP** `DC01-ip` (Static).
+  6. Created **NIC** `dc01635` linked to `subnet-dc` & `nsg-dc`.
+  7. Deployed **Windows Server VM** `DC01` in West US 2:
+     - Size optimized for Azure Education credits.
+     - Monitoring features disabled to reduce cost.
+  8. Deleted unused **East US** resources after migration.
+  
+  ### **Update – 10 Aug 2025**
+  
+  1. Created **Organizational Units (OUs)** for better AD structure:
+    - `_Servers`
+    - `_Workstations`
+    - `_Users`
+      - `Admins`
+      - `StandardUsers`
+  2. Moved **CLIENT01** into `_Workstations` OU.
+  3. Created test domain user **Harry Potter** in `StandardUsers`.
+  4. Attempted **GPO deployment** for desktop wallpaper *(requires shared UNC path for completion)*.
+  5. Noted RDP restriction for new users — pending group membership fix.
 
-### **Update – 10 Aug 2025**
+  ### **Update – 15 Aug 2025**
 
-1. Created **Organizational Units (OUs)** for better AD structure:
-  - `_Servers`
-  - `_Workstations`
-  - `_Users`
-    - `Admins`
-    - `StandardUsers`
-2. Moved **CLIENT01** into `_Workstations` OU.
-3. Created test domain user **Harry Potter** in `StandardUsers`.
-4. Attempted **GPO deployment** for desktop wallpaper *(requires shared UNC path for completion)*.
-5. Noted RDP restriction for new users — pending group membership fix.
+- **Case Study:** Added `case-studies/gpo-wallpaper-case-study/` with a full README and a `/Screenshots` folder.  
+  - Root cause documented: **RDP client was configured to suppress desktop backgrounds**; enabling **Desktop background** in the RDP Experience settings revealed the GPO-applied wallpaper.
+  - Included resolution steps (SYSVOL path, permissions, loopback merge) and verification (`gpupdate`, `gpresult`).
+  - Added an “MMC Crash (mmc.exe 0x8007000e)” fix snippet (clear `%APPDATA%\Microsoft\MMC` and GP History).
+- **Screenshots:** Linked ZIP and inline images:
+  - `case-studies/gpo-wallpaper-case-study/Screenshots/Desktop-wallpaper-GPO.zip`
+  - Updated README to embed `GPMC.png`, `GPMCeditor.png`, `GPO-Report-AppliedGPOs.png`, `RDP-exp-tab.png`, `VMviaRDP-Display-Settings.png`, `eventviewer-DC01.png`.
+- **Network Diagram:** Replaced placeholder with a **Mermaid** diagram (vertical layout for clarity).
+- **Ops hygiene:** Set **DC01 time zone** to **Central Standard Time**; confirmed **Auto-shutdown 11:59 PM Central** for DC01 and CLIENT01.
+- **Progress Tracker:** Locked phases 1–5 as complete; **Phase 6** marked as *in progress* (screenshots upload pending).
+
 
 ---
 
