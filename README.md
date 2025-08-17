@@ -202,12 +202,6 @@ Virtual Machine (DC01)
 17. **Delete Old Resource Group - East US**  
     ![Delete Old Resource Group](images/13-delete-old-resource-group-eastus.png)
 
-18. **GitHub Repo Creation**  
-    ![GitHub Repo Creation](images/14-github-repo-create.png)
-
-19. **GitHub Images Folder**  
-    ![GitHub Folder Images](images/15-github-folder-images.png)
-
 ---
 
 ## 8. Credits
