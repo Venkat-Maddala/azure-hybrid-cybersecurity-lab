@@ -30,8 +30,6 @@ The lab will serve as a platform to practice:
 
 ## 3. Network Diagram
 
-## 3. Network Diagram
-
 ```mermaid
 flowchart TB
   Internet[(Internet)] --> PIP["Public IP: DC01-ip"]
