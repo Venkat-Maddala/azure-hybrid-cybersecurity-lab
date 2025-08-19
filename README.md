@@ -148,7 +148,7 @@ Virtual Machine (DC01)
   - Completed `case-studies/sentinel-onboarding/README.md` with **mind map**, **KQL**, and **evidence**.
   - Added screenshots (connector, DCR, AMA on VMs, KQL results, rule summary, incidents, workbook).
 - 🔗 Added/verified repo link:  
-  - [Microsoft Sentinel — Onboarding](case-studies/sentinel-onboarding/README.md)
+  - [Microsoft Sentinel — Onboarding](case-studies/sentinel-onboarding/Readme.md)
 
 ---
 ## 5. Configuration Notes
