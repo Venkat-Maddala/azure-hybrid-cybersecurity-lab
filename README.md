@@ -125,9 +125,32 @@ Virtual Machine (DC01)
   - Enable **Entra ID** diagnostics (**SignInLogs**, **AuditLogs**) to `law-csc`.
   - Create a **scheduled analytics rule** for multiple failed logons in 10 minutes (brute-force signal).
   - Save a **Windows Security** workbook and capture screenshots for the case study.
+### **Update – 17 Aug 2025**
+
+- **Microsoft Sentinel onboarding (Windows Security via AMA):**
+  - Verified/created **Log Analytics Workspace** `law-csc` (West US 2) and set retention.
+  - Enabled **Microsoft Sentinel** on `law-csc` (trial active).
+  - Installed **Windows Security Events via AMA** connector:
+    - Created **DCR** `DCR-WindowsSecurity` scoped to **DC01** and **CLIENT01**.
+    - Confirmed **Azure Monitor Agent** installed (Extensions → *Succeeded*).
+  - **KQL**: validated ingestion from `SecurityEvent`, tested **4625 failed logons**, and saved queries.
+  - **Analytics rule** created: **≥5 failed logons in 10 minutes** with entity mapping (Account→`Target`, Host→`Computer`).
+  - Note: Some Sentinel blades redirect to **Defender portal** (expected).
+  - Decision: **Entra ID (SignIn/Audit) deferred** due to university tenant permissions.
+- 📂 Case study scaffold created: `case-studies/sentinel-onboarding/`
+
+### **Update – 18 Aug 2025**
+
+- **Alert grouping enabled** on the brute-force rule: *Group when all entities match* (**Account + Host**, **15 min** window).
+- **Incidents verified** in **Defender → Incidents & alerts → Incidents** for brute-force tests (against `CSCLAB\hpotter`).
+- **Workbook saved**: *Windows Security – Event Analyzer* to workspace `law-csc`; set to **Last 24 hours** and validated charts.
+- **Case study finalized**:
+  - Completed `case-studies/sentinel-onboarding/README.md` with **mind map**, **KQL**, and **evidence**.
+  - Added screenshots (connector, DCR, AMA on VMs, KQL results, rule summary, incidents, workbook).
+- 🔗 Added/verified repo link:  
+  - [Microsoft Sentinel — Onboarding](case-studies/sentinel-onboarding/README.md)
 
 ---
-
 ## 5. Configuration Notes
 - **Security Type**: Standard
 - **Public IP**: Static for consistent RDP connection
