@@ -178,6 +178,15 @@ Virtual Machine (DC01)
     code view.\
 -   Verified end-to-end flow with test incident.
 
+### **Update - 22 Aug 2025**
+
+-   Encountered issue: test analytics rule (`SecurityEvent | take 1`)
+    produced no incidents (VMs off).\
+-   Fixed by using **dummy query**: `print test="ForceTestRow"` in
+    Analytics Rule.\
+-   Created **Automation Rule** (new method) to trigger playbook on
+    incident creation.\
+-   Successfully generated test incidents that triggered playbook.
 
 
 ---
