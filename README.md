@@ -150,6 +150,16 @@ Virtual Machine (DC01)
 - 🔗 Added/verified repo link:  
   - [Microsoft Sentinel — Onboarding](case-studies/sentinel-onboarding/Readme.md)
 
+### **Update - 19 Aug 2025**
+
+-   Started extending the existing playbook `pbk-EmailOnNewIncident`.\
+-   Goal: integrate **Azure DevOps Work Item creation** into the SOC
+    workflow.\
+-   Created PAT in DevOps (scope: Work Items -- Read & Write).\
+-   Stored PAT securely in **Azure Key Vault**, assigned Logic App MI →
+    `Key Vault Secrets User`.
+
+
 ---
 ## 5. Configuration Notes
 - **Security Type**: Standard
