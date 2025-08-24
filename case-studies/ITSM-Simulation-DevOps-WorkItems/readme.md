@@ -43,7 +43,10 @@ analysts via email.
 -   **End-user experience:** Analysts receive actionable email with a
     **clickable DevOps work item link** and see the same link in
     Sentinel comments.
-
+---
+## FlowChart
+   case-studies/ITSM-Simulation-DevOps-WorkItems/screenshots/ITSM-Devops-WorkItem-creation-Flowchart.png
+---
 ### 🔹 Next Steps (Backlog)
 
 -   **L1 Assignment Simulation:** Current issues are unassigned. Future
