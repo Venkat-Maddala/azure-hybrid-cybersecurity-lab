@@ -169,6 +169,15 @@ Virtual Machine (DC01)
     `concat('Basic ', base64(concat(':', body('Get_secret')?['value'])))`.\
 -   First DevOps work item successfully created (#1).
 
+### **Update - 21 Aug 2025**
+
+-   Updated **Add Comment** action in Sentinel incident → auto-inserts
+    DevOps work item link.\
+-   Updated **Send Email (V2)** action → added DevOps work item link.\
+-   Issue: email rendered raw HTML → fixed by forcing `IsHtml=true` in
+    code view.\
+-   Verified end-to-end flow with test incident.
+
 
 
 ---
