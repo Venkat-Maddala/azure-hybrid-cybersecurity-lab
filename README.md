@@ -159,6 +159,17 @@ Virtual Machine (DC01)
 -   Stored PAT securely in **Azure Key Vault**, assigned Logic App MI →
     `Key Vault Secrets User`.
 
+### **Update - 20 Aug 2025**
+
+-   Inserted **Get Secret** action into playbook to fetch PAT.\
+-   Added **Compose WorkItem Title/Description** actions with dynamic
+    Sentinel fields.\
+-   Configured **HTTP action** to call Azure DevOps REST API using PAT.\
+-   Debugged **Authorization expression** → fixed with
+    `concat('Basic ', base64(concat(':', body('Get_secret')?['value'])))`.\
+-   First DevOps work item successfully created (#1).
+
+
 
 ---
 ## 5. Configuration Notes
