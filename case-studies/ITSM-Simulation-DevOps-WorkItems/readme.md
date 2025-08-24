@@ -45,7 +45,8 @@ analysts via email.
     Sentinel comments.
 ---
 ## FlowChart
-   case-studies/ITSM-Simulation-DevOps-WorkItems/screenshots/ITSM-Devops-WorkItem-creation-Flowchart.png
+
+   ![WorkFlow](./screenshots/ITSM-Devops-WorkItem-creation-Flowchart.png)
 ---
 ### 🔹 Next Steps (Backlog)
 
