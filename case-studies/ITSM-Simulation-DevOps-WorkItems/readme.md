@@ -58,3 +58,30 @@ analysts via email.
 -   **Automation Rules Cleanup:** Retire the dummy `print` query once
     real log sources (DC01/Client01) are generating consistent
     SecurityEvents.
+
+## Screenshots - ITSM Simulation (Sentinel → DevOps Work Items)
+
+Below are the key screenshots captured for this phase:
+
+1. **Flow Overview**  
+   ![ITSM-Devops-WorkItem-creation-Flowchart](./screenshots/ITSM-Devops-WorkItem-creation-Flowchart.png)
+
+2. **Key Vault Creation & Secret**  
+   ![KeyVault-creation-review](./screenshots/KeyVault-creation-review.png)  
+   ![KeyVault-Secret](./screenshots/KeyVault-Secret.png)
+
+3. **Logic App Designer – ITSM Section**  
+   ![LogicApp-Designer-ITSMSection](./screenshots/LogicApp-Designer-ITSMSection.png)
+
+4. **Logic App Run History (HTTP Action)**  
+   ![LogicApp-RunHistory-HTTP](./screenshots/LogicApp-RunHistory-HTTP.png)
+
+5. **Azure DevOps Work Item Created**  
+   ![AzureDevOps-WorkItem](./screenshots/AzureDevOps-WorkItem.png)
+
+6. **Sentinel Incident Comment with DevOps Link**  
+   ![Sentinel-Incident-Comment](./screenshots/Sentinel-Incident-Comment.png)
+
+7. **Email Notification with Incident + DevOps Work Item**  
+   ![Email-Inbox-ADOlink](./screenshots/Email-Inbox-ADOlink.png)
+
