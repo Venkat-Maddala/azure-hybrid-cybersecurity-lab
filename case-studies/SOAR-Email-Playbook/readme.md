@@ -120,26 +120,9 @@ JSON readable.\
 
 ------------------------------------------------------------------------
 
-## Screenshots to Capture (filenames)
-
-1.  `LogicApp-Create-Blank-Playbook.png`\
-2.  `LogicApp-Enable-Managed-Identity.png`\
-3.  `IAM-RoleAssignment-SentinelResponder.png`\
-4.  `LogicApp-Designer-IncidentTrigger.png`\
-5.  `LogicApp-Designer-OutlookV2.png`\
-6.  `Sentinel-Automation-CreateRule-IncidentCreated.png`\
-7.  `Sentinel-Automation-Condition-AnalyticsRuleName.png`\
-8.  `Sentinel-Automation-Action-RunPlaybook.png`\
-9.  `Incidents-RunPlaybook-Manual.png`\
-10. `LogicApp-RunHistory-Succeeded.png`\
-11. `Email-Inbox-NewIncident.png`
-
-------------------------------------------------------------------------
-
 ## Evidence
 
-Store screenshots under:\
-`/evidence/phase-08/`
+
 
 ------------------------------------------------------------------------
 
