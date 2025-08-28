@@ -120,18 +120,31 @@ Sentinel incident**.
 
 ---
 
-## Evidence
+## Evidence – Phase 8: SOAR Email Playbook
 
-Screenshots stored under:  
+Screenshots are stored under:  
 `case-studies/SOAR-Email-Playbook/screenshots/`
 
-1.  `Logicapp-creation-review.png` — Logic App creation review blade  
-2.  `IAM-RoleAssignment-SentinelResponder.png` — RBAC assignment  
-3.  `LogicApp-Designer-Playbook.jpg` — Designer view (Sentinel Trigger → Comment → Email)  
-4.  `Sentinel-AutomationRule.png` — Automation rule (incident created → run playbook)  
-5.  `LogicApp-RunHistory.png` — Logic App run history (Succeeded)  
-6.  `Sentinel-Incident-Comment.png` — Incident comment added by playbook  
-7.  `Email-Inbox.png` — Email notification with clean HTML formatting  
+1. **Logic App Creation Review**  
+   ![Logicapp-creation-review](./screenshots/Logicapp-creation-review.png)
+
+2. **RBAC Assignment (Sentinel Responder)**  
+   ![IAM-RoleAssignment-SentinelResponder](./screenshots/IAM-RoleAssignment-SentinelResponder.png)
+
+3. **Logic App Designer – Playbook Flow**  
+   ![LogicApp-Designer-Playbook](./screenshots/LogicApp-Designer-Playbook.jpg)
+
+4. **Automation Rule (Incident Created → Run Playbook)**  
+   ![Sentinel-AutomationRule](./screenshots/Sentinel-AutomationRule.png)
+
+5. **Logic App Run History (Succeeded)**  
+   ![LogicApp-RunHistory](./screenshots/LogicApp-RunHistory.png)
+
+6. **Sentinel Incident Comment**  
+   ![Sentinel-Incident-Comment](./screenshots/Sentinel-Incident-Comment.png)
+
+7. **Email Notification with Incident Details**  
+   ![Email-Inbox](./screenshots/Email-Inbox.png)
 
 ---
 
