@@ -59,19 +59,19 @@ analysts via email.
     real log sources (DC01/Client01) are generating consistent
     SecurityEvents.
 
-## Screenshots - ITSM Simulation (Sentinel → DevOps Work Items)
+## Evidence – Phase 9: ITSM Simulation (Sentinel → DevOps Work Items)
 
 Below are the key screenshots captured for this phase:
 
 1. **Flow Overview**  
-   ![ITSM-Devops-WorkItem-creation-Flowchart](./screenshots/ITSM-Devops-WorkItem-creation-Flowchart.png)
+   <img src="./screenshots/ITSM-Devops-WorkItem-creation-Flowchart.png" alt="ITSM-Devops-WorkItem-creation-Flowchart" width="400"/>
 
 2. **Key Vault Creation & Secret**  
    ![KeyVault-creation-review](./screenshots/KeyVault-creation-review.png)  
    ![KeyVault-Secret](./screenshots/KeyVault-Secret.png)
 
 3. **Logic App Designer – ITSM Section**  
-   ![LogicApp-Designer-ITSMSection](./screenshots/LogicApp-Designer-ITSMSection.png)
+   <img src="./screenshots/LogicApp-Designer-ITSMSection.png" alt="LogicApp-Designer-ITSMSection" width="400"/>
 
 4. **Logic App Run History (HTTP Action)**  
    ![LogicApp-RunHistory-HTTP](./screenshots/LogicApp-RunHistory-HTTP.png)
@@ -84,4 +84,3 @@ Below are the key screenshots captured for this phase:
 
 7. **Email Notification with Incident + DevOps Work Item**  
    ![Email-Inbox-ADOlink](./screenshots/Email-Inbox-ADOlink.png)
-
